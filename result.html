@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PTI Result Checker | Academic Result</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/pti-logo.jpeg" alt="PTI logo"><span><strong>PETROLEUM TRAINING INSTITUTE</strong><small>Knowledge • Skills • Global Opportunities</small></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav"><a href="index.html">Home</a><a class="active" href="check-result.html">Check Result</a><a href="about.html">About PTI</a><a href="contact.html">Contact</a></nav>
+  </header>
+
+  <main class="result-page">
+    <section class="result-panel">
+      <div class="result-heading"><img src="assets/pti-logo.jpeg" alt="PTI logo"><div><h1>PETROLEUM TRAINING INSTITUTE</h1><p>STUDENT ACADEMIC RESULT</p></div></div>
+      <div class="student-details">
+        <div><h2>Student Information</h2><p><b>Matriculation Number:</b><span id="outMatric">PTI/ND/2023/001</span></p><p><b>Full Name:</b><span id="outName">Student Demonstration</span></p><p><b>Department:</b><span id="outDepartment">Mechanical Engineering</span></p><p><b>Level:</b><span id="outLevel">ND 2</span></p><p><b>Academic Session:</b><span id="outSession">2025/2026</span></p><p><b>Semester:</b><span id="outSemester">First Semester</span></p></div>
+        <img class="student-photo" src="assets/student-photo.jpeg" alt="Student photograph">
+      </div>
+      <h2 class="table-title" id="resultTitle">First Semester Result (2025/2026)</h2>
+      <div class="table-scroll"><table><thead><tr><th>S/N</th><th>Course Code</th><th>Course Title</th><th>Credit Unit</th><th>Score</th><th>Grade</th><th>Grade Point</th></tr></thead><tbody id="courseRows"></tbody></table></div>
+      <div class="totals"><span>Total Credit Units: <b id="totalUnits">14</b></span><span>Semester GPA: <b id="gpa">3.34</b></span></div>
+      <div class="result-status"><span>CGPA (To Date) <b id="cgpa">3.21</b></span><span>Result Status <b>PASS</b></span></div>
+      <div class="result-actions"><button class="button button-primary" onclick="window.location.href='result-slip.html'">▣ &nbsp; Print Result Slip</button><a class="button button-outline" href="index.html">⌂ &nbsp; Back to Home</a></div>
+      <p class="demo-warning">Demonstration data only — not an official PTI academic record.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© 2026 PTI Result Checker — Student Project Demonstration</span><span><a href="about.html">About</a> · <a href="contact.html">Contact</a></span></footer>
+</body>
+</html>

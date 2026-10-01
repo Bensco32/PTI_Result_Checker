@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PTI Result Checker | Check Result</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="assets/pti-logo.jpeg" alt="PTI logo"><span><strong>PETROLEUM TRAINING INSTITUTE</strong><small>Knowledge • Skills • Global Opportunities</small></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav"><a href="index.html">Home</a><a class="active" href="check-result.html">Check Result</a><a href="about.html">About PTI</a><a href="contact.html">Contact</a></nav>
+  </header>
+
+  <main class="form-page">
+    <section class="checker-card">
+      <div class="user-icon">♟</div>
+      <h1>Student Result Checker</h1>
+      <p class="muted">Enter your matriculation number to view your result.</p>
+      <form id="resultForm">
+        <label for="matricNumber">Matriculation Number</label>
+        <input id="matricNumber" name="matricNumber" type="text" placeholder="e.g. CSIT/ICE/ND/2023/7297" required>
+        <label for="session">Academic Session</label>
+        <select id="session" name="session"><option>2025/2026</option><option>2024/2025</option></select>
+        <fieldset>
+          <legend>Semester</legend>
+          <label class="radio-label"><input type="radio" name="semester" value="First Semester" checked> First Semester</label>
+          <label class="radio-label"><input type="radio" name="semester" value="Second Semester"> Second Semester</label>
+        </fieldset>
+        <button class="button button-primary full-width" type="submit">⌕ &nbsp; View Result</button>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </form>
+      <p class="notice">✓ &nbsp; This is a student project, created by Obanyedo Ovie Joseph.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© 2026 PTI Result Checker — Student Project Demonstration</span><span><a href="about.html">About</a> · <a href="contact.html">Contact</a></span></footer>
+</body>
+</html>
